@@ -1,0 +1,38 @@
+body {
+    /*background: green;*/
+    /*background: #00ff00;*/
+    background-image: url("https://www.significadofacil.com/wp-content/uploads/2019/07/background.jpg");
+    background-size: auto 100vh; /*LARGURA AUTOMÁTICA + VH PARA FICAR COM UM VALOR RELATIVO EM RELAÇÃO A PÁGINA QUE ESTÁ CARREGANDO O SITE NAQUELE MOMENTO*/
+    height: 100vh; /*PARA GARANTIR QUE O BODY SEMPRE TERÁ A ALTURA RELATIVA AO DISPOSITIVO ONDE ESTÁ SENDO ABERTO TAMBÉM*/
+    font-family: Arial;
+  }
+  
+  /*COMO DEMOS PARA O DIV A CLASSE MENU, EDITAREMOS ELA ABAIXO DA SEGUINTE FORMA. CASO USÁSSEMOS id NO LUGAR DE class NO HTML, INICIARÍAMOS COM # AO INVÉS DE . */
+  .menu {
+    background-color: white;
+  }
+  .menu li { /* SELETOR HIERÁRQUICO -> MEXER NAS li APENAS DO MENU*/
+    list-style: none;
+  }
+  .menu ul {
+    display: flex; /*FAZ AS LINHAS VIRAREM COLUNAS*/
+    justify-content: space-around; /*ESPAÇO ENTRE AS COLUNAS*/
+  }
+  
+  a {
+    text-decoration: none;
+    color: teal;
+  }
+  a:hover { /*PSEUDO-CLASSE DO CSS, NÃO É PRECISO DECLARAR NO HATML, JÁ É IMPLICITO QUE EXISTE ELA*/
+    text-decoration: underline;
+  }
+  
+  .site-subtitle, /*REAPROVEITAMENTO DE CÓDIGO PARA DUAS CLASSES IGUAIS*/
+  .site-title {/*DECLARAR AS PROPRIEDADES EM ORDER ALFABÉTICA*/
+    color: whitesmoke;
+    text-align: center;
+  }
+  
+  .site-subtitle {
+    font-style: italic;
+  }
